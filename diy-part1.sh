@@ -9,11 +9,11 @@
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 
-sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
-./scripts/feeds update -a && rm -rf feeds/luci/applications/luci-app-mosdns
-rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
-rm -rf feeds/packages/utils/v2dat
+# sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+# sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
+# ./scripts/feeds update -a && rm -rf feeds/luci/applications/luci-app-mosdns
+# rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
+# rm -rf feeds/packages/utils/v2dat
 
 # echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
 # echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;luci-smartdns-dev" >> "feeds.conf.default"
