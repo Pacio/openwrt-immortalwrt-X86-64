@@ -8,3 +8,5 @@
 #
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
+
+echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
