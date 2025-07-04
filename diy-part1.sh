@@ -9,4 +9,7 @@
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 
-echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
+sed -i '1i src-git immpackage https://github.com/tudaole/OpenWrt-ImmortalWrt-Packages' feeds.conf.default
+./scripts/feeds update -a && rm -rf feeds/luci/applications/luci-app-mosdns && rm -rf feeds/luci/applications/luci-app-passwall && rm -rf feeds/luci/applications/luci-app-smartdns
+rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
+rm -rf feeds/packages/utils/v2dat
