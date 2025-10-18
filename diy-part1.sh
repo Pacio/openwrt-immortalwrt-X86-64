@@ -8,5 +8,3 @@
 #
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
-
-git clone --depth 1 --single-branch https://github.com/breeze303/openwrt-podman package/podman
