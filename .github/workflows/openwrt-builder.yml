@@ -75,11 +75,7 @@ jobs:
           sudo -E systemctl daemon-reload
           sudo -E timedatectl set-timezone "Asia/Shanghai"
 
-          # sudo mkdir -p /mnt/build_wrt
-          # sudo chown $USER:$USER /mnt/build_wrt
-          # sudo ln -s /mnt/build_wrt $GITHUB_WORKSPACE/wrt
-
-          echo "OPENWRT_PATH=$PWD" >> $GITHUB_ENV
+    
 
     - name: Install latest Clang/LLVM(安装最新的 LLVM/Clang)
       run: |
