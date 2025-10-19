@@ -34,7 +34,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: ruby/setup-ruby@086ffb1a2090c870a3f881cc91ea83aa4243d408 
+      uses: ruby/setup-ruby@ab177d40ee5483edb974554986f56b33477e21d0 
 
     - name: Initialization environment
       env:
