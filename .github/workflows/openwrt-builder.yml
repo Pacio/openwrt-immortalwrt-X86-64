@@ -35,6 +35,8 @@ jobs:
     steps:
     - name: Checkout
       uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.1'
 
     - name: Initialization environment
       env:
